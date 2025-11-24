@@ -1,0 +1,37 @@
+.body{
+    background-color: #1d1d1d;
+}
+
+.caixinha {
+    width: 400px;               /* largura da caixinha */
+    background: #1d1d1d;        /* fundo escuro */
+    color: #fff;                /* texto branco */
+    padding: 30px;              /* espaço interno */
+    margin: 50px auto;          /* centraliza horizontalmente */
+    border-radius: 10px;        /* cantos arredondados */
+    text-align: center;         /* centraliza texto */
+    box-shadow: 0 0 20px #000;  /* sombra para destacar */
+}
+
+.caixinha h2 {
+    color: #7b6df6;
+    margin-bottom: 15px;
+}
+
+.caixinha p {
+    margin-bottom: 10px;
+}
+
+.caixinha button {
+    background: #7b6df6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.caixinha button:hover {
+    background: #5d4ce0;
+}

@@ -1,0 +1,36 @@
+body {
+    background: #111;
+    color: #eee;
+    font-family: "Segoe UI", sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #7b6df6;
+    margin-top: 20px;
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    background: #1e1e1e;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #333;
+}
+
+th {
+    background: #272727;
+    color: #7b6df6;
+}
+
+.delete {
+    color: #ff5c5c;
+}
+
+tr:hover {
+    background: #242424;
+}

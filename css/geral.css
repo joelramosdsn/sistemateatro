@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #111;
+    color: #eee;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #7b6df6;
+}
+
+.botao {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #7b6df6;
+    color: white;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #5d4ce0;
+}
+
+.topo {
+    width: 100%;
+    background: #1b1b1b;
+    padding: 15px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    box-shadow: 0 0 10px #000;
+}
+
+.topo a {
+    color: #ccc;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.topo a:hover {
+    color: #7b6df6;
+}
+
+.lista-eventos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.evento {
+    width: 320px;
+    background: #1d1d1d;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px #000;
+    transition: 0.3s;
+}
+
+.evento:hover {
+    transform: translateY(-5px);
+}
+
+.evento h2 {
+    color: #7b6df6;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* deixa o título centralizado */
+    position: relative;
+    padding: 20px;
+}
+
+/* Faz o ícone do admin se posicionar totalmente à direita */
+.icon-admin {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%); /* centraliza verticalmente em relação à header */
+}
+
+.icon-admin img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.icon-admin img:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    color: #7b6df6;
+    margin: 0;
+}
+

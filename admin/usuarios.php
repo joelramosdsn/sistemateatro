@@ -14,7 +14,7 @@ if (isset($_GET['delete'])) {
 if (isset($_POST['add'])) {
     $nome = $_POST['nome'];
     $email = $_POST['email'];
-    $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
+    $senha = $_POST['senha'];
 
     $sql = $pdo->prepare("INSERT INTO usuarios (nome, email, senha) VALUES (?, ?, ?)");
     $sql->execute([$nome, $email, $senha]);
@@ -27,7 +27,7 @@ if (isset($_POST['edit'])) {
     $email = $_POST['email'];
 
     if (!empty($_POST['senha'])) {
-        $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
+        $senha = $_POST['senha'];
         $sql = $pdo->prepare("UPDATE usuarios SET nome=?, email=?, senha=? WHERE id=?");
         $sql->execute([$nome, $email, $senha, $id]);
     } else {
